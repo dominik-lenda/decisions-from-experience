@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+  </head>
+  <body>
+ <script src="script.js"></script> 
+    <svg viewBox="0 0 300 50" class="problem_set">
+
+      <g class="option_l" onclick="showAndHide(document.getElementById('outcome_l'))">
+      <rect x=20% y=35% width="10%" height="95%"/>
+      <text x=25% y=70% dominant-baseline="middle" text-anchor="middle" fill="red" id="outcome_l">0</text>
+      </g>
+
+      <g class="option_r" onclick="showAndHide(document.getElementById('outcome_r'))">
+      <rect  x=70% y=35% width="10%" height="95%"/>
+      <text x="75%" y="70%" fill="red" dominant-baseline="middle" text-anchor="middle" id="outcome_r">4</text>
+      </g>
+
+      <g class="choice">
+      <rect x=45% y=70% width="10%" height="40%"/>
+      <text x="50%" y="87%" fill="red" dominant-baseline="middle" text-anchor="middle" font-size=7>choice</text>    
+      </g>
+
+    </svg>
+  </body>
+</html>

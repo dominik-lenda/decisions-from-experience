@@ -1,0 +1,5 @@
+body {background-color: lightgrey;} 
+
+#outcome_r, #outcome_l {
+  display: none;
+}
