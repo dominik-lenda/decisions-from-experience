@@ -153,7 +153,20 @@ var experiment_block = {
         }
         setTimeout(function() {hide()}, 1000)
       };
-   return "" 
+   return "<svg  width='100%' height='100%' class='problem_set' preserveAspectRatio='xMidYMid meet' >" +
+      "<g class='option_l' onclick='showAndHide(this, document.getElementById('outcome_l'), document.getElementById('rect_l'))'>" +
+      "<rect x=20% y=35% width='10%' height='20%' rx='20' ry='20' class='rectangle' id='rect_l' />" +
+      "<text x=25% y=46% dominant-baseline='middle' text-anchor='middle' fill='red' id='outcome_l'>0</text>" +
+      "</g>" +
+      "<g class='option_r' onclick='showAndHide(this, document.getElementById('outcome_r'), document.getElementById('rect_r'))'>" +
+      "<rect  x=70% y=35% width='10%' height='20%' rx='20' ry='20' class='rectangle' id='rect_r' />" +
+      "<text x='75%' y='46%' fill='red' dominant-baseline='middle' text-anchor='middle' id='outcome_r'>4</text>" +
+      "</g>" +
+      "<g class='choice' id='choice_button' onclick='hideAll()'>" +
+      "<rect x=45% y=50% width='10%' height='15%'  rx='20' ry='20' class='rectangle center'/>" +
+      "<text x='50%' y='59%' fill='red' dominant-baseline='middle' text-anchor='middle'>choice</text>"     +
+      "</g>" +
+    "</svg>"
     }},
     {stimulus: 'This is the second experimental trial'}
   ]
